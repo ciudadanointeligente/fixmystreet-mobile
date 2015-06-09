@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="org.mysociety.FixMyStreet" android-versionCode="41" version="2.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>FixMyStreet</name>
+    <name>BarriosEnAccion</name>
     <description>
-        Report problems on FixMyStreet
+        Reporte problemas en BarriosEnAccion
     </description>
 
-    <author href="http://mysociety.org" email="team@mysociety.org">
-        mySociety
+    <author href="http://ciudadanoi.org" email="contacto@ciudadanointeligente.org">
+        Ciudadano Inteligente
     </author>
     <content src="index.html" />
 
@@ -22,6 +22,7 @@
     <access origin="ecn.t3.tiles.virtualearth.net"/>
     <access origin="mapit.mysociety.org"/>
     <access origin="www.fixmystreet.com"/>
+    <access origin="barriosenaccion.cl"/>
 
     <preference name="android-minSdkVersion" value="16" />
     <preference name="orientation" value="portrait" />
