@@ -19,7 +19,7 @@ var CONFIG = {
 
     // how long, in milliseconds, before photo uploads timeout. Defaults to 120000 ( 2 minutes )
     UPLOAD_TIMEOUT: 120000,
-    TESTING: 1,
-    DEBUG: 1,
+    TESTING: 0,
+    DEBUG: 0,
     isUk: 0
 };
