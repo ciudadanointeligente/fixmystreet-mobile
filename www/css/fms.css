@@ -90,11 +90,16 @@
         padding: 10px 25px;
     }
 
-    .ui-corner-all,
-    .ui-btn-corner-all {
+    .ui-corner-all, .ui-btn-corner-all {
         -webkit-border-radius: 0px;
         border-radius: 0px;
     }
+
+    .ui-btn.ui-btn-corner-all {
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+    }
+
     .ui-icon {
         -webkit-border-radius: 0px;
         border-radius: 0px;
