@@ -1,12 +1,12 @@
 <div id="submit-header" data-role="header">
-    <a id="reports-next-btn" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">Home</a>
+    <a id="reports-next-btn" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">Inicio</a>
     <h1>Iniciar sesión</h1>
 </div>
 
 <div data-role="content">
     <% if ( FMS.isLoggedIn ) { %>
     <div id="signed_in_row">
-        <p class="notopmargin">You are signed in as <%= email %></p>
+        <p class="notopmargin">Iniciaste sesión como <%= email %></p>
         <div id="err" class="nodisplay"></div>
         <div class="bottom-btn">
             <input type="button" id="logout" name="logout" value="Sign Out" data-theme="a">
@@ -14,17 +14,17 @@
     </div>
     <div id="password_row" class="nodisplay">
         <p class="notopmargin">
-        Signed out!
+        ¡Sesión cerrada!
         </p>
     <% } else { %>
     <div id="password_row">
     <% } %>
         <form name="signinForm" class="inputcard" id="signinForm">
         <div>
-            <input data-role="none" type="email" value="" name="email" id="form_email" placeholder="Your Email" required>
+            <input data-role="none" type="email" value="" name="email" id="form_email" placeholder="Tu email" required>
         </div>
         <div>
-            <input data-role="none" type="password" value="" name="password" id="form_password" placeholder="Your password" required>
+            <input data-role="none" type="password" value="" name="password" id="form_password" placeholder="Tu contraseña" required>
         </div>
         <div class="noborder">
             <input type="submit" id="login" class="btn btn-default" name="login" value="Iniciar sesión" data-theme="a">
@@ -33,7 +33,7 @@
     </div>
     <div id="success_row" class="nodisplay">
         <p class="notopmargin">
-        Signed in!
+        ¡Sesión iniciada!
         </p>
         <div id="err" class="nodisplay"></div>
         <div class="bottom-btn">
