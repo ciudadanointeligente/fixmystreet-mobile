@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.mysociety.FixMyStreet" android-versionCode="41" version="2.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="org.ciudadanointeligente.BarriosEnAccion" android-versionCode="42" version="2.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>BarriosEnAccion</name>
     <description>
         Reporte problemas en BarriosEnAccion
     </description>
 
-    <author href="http://mysociety.org" email="team@mysociety.org">
-        mySociety
+    <author href="http://ciudadanoi.org" email="contacto@ciudadanointeligente.org">
+        Ciudadano Inteligente
     </author>
     <content src="index.html" />
 
