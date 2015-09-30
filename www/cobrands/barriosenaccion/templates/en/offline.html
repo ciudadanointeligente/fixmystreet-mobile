@@ -1,0 +1,71 @@
+<div data-role="header" data-position="fixed">
+        <a id="offline-prev-btn" class="ui-btn-left">Prueba de nuevo</a>
+        <h1>Offline</h1>
+        <a id="offline-next-btn" data-icon="arrow-r" data-iconpos="right" class="ui-btn-right">Skip</a>
+</div>
+    <div id="locating" class="nodisplay">
+        <div class="radar"></div>
+        <div id="progress">
+            <div id="progress-bar">
+            </div>
+        </div>
+
+        <p>
+        Buscando tu ubicación
+        </p>
+
+        <p>
+        <input data-theme="c" type="button" id="locate_cancel" value="Cancel">
+        </p>
+    </div>
+<div data-role="content">
+    <div>
+        <p class="notopmargin">
+        <% if ( typeof id != 'undefined' ) { %>
+        No encontramos una conexión a internet. Sin embargo puedes editar el reporte y enviarlo más tarde.
+        <% } else { %>
+        No encontramos una conexión a internet. Sin embargo puedes empezar el reporte ahora y completarlo más tarde en 'Borradores' cuando consigas conexión.
+        <% } %>
+        </p>
+
+        <p id="locate_result">
+        <% if ( lat ) { %>
+        Este reporte tiene una posición.
+        <% } else { %>
+        <input type="button" data-role="button" data-theme="a" id="locate" value="Locate (optional)" >
+        <% } %>
+        </p>
+
+        <div class="inputcard">
+            <div>
+                <input data-role="none" type="text" value="<%= title %>" name="title" id="form_title" placeholder="Título" required>
+            </div>
+
+            <div>
+                <textarea data-role="none" rows="7" cols="26" name="detail" id="form_detail" placeholder="Por favor completa los detalles del problema." required><%= details %></textarea>
+            </div>
+        </div>
+
+        <% if ( file != '' ) { %>
+        <div id="add_photo" style="display: none">
+        <% } else { %>
+        <div id="add_photo">
+        <% } %>
+            <label>Agrega una foto <em>(optional)</em></label>
+            <input data-icon="fms-photo-new" value="Take a new photo" type="button" name="photo_button" id="id_photo_button" data-role="button" data-theme="a">
+            <input data-icon="fms-photo-existing" value="Add an existing photo" type="button" name="existing" id="id_existing" data-role="button" data-theme="c">
+        </div>
+
+        <% if ( file == '' ) { %>
+        <div id="display_photo" style="display: none">
+        <% } else { %>
+        <div id="display_photo">
+        <% } %>
+            <label>Tu foto</label>
+            <div class="photo">
+            <img class="small" id="photo" src="<%= file %>" />
+            </div>
+            <input value="Remove Photo" type="button" name="del_photo_button" id="id_del_photo_button" data-role="button" data-theme="a">
+        </div>
+    </div>
+</div>

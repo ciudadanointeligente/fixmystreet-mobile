@@ -1,0 +1,25 @@
+<div id="submit-header" data-role="header">
+    <h1>Tus detalles</h1>
+</div>
+
+<div data-role="content">
+    <div class="inputcard">
+        <div>
+            <input data-role="none" type="email" value="<%= user.email %>" name="email" id="form_email" placeholder="Por favor ingresa tu email" required>
+        </div>
+    </div>
+
+    <p>
+    Esta aplicación necesita enviarte un mail de confirmación antes de enviar tu reporte al municipio.
+    </p>
+
+    <p>
+    Para saltarte este paso en el futuro puedes establecer una contraseña ahora.
+    </p>
+
+    <div class="bottom-btn">
+        <input data-role="button" data-theme="a" type="button" id="email_confirm" name="email_confirm" value="No quiero crear una contraseña">
+        <input data-role="button" data-theme="a" type="button" id="set_password" name="set_password" value="Quiero crear una contraseña">
+        <input data-role="button" data-theme="a" type="button" id="have_password" name="have_password" value="Ya tengo una contraseña - login">
+    </div>
+</div>

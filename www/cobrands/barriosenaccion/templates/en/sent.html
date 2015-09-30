@@ -1,0 +1,22 @@
+<div id="report-created-header" data-role="header">
+    <a class="ui-btn-left">Inicio</a>
+    <h1>Reporte creado</h1>
+</div>
+<div data-role="content">
+    <% if ( typeof email_confirm != 'undefined' && email_confirm === 1 ) { %>
+    <h3>Te enviamos un mail de confirmación</h3>
+
+    <p>
+        Te enviamos un mail de confirmación el cual podría tomar algunos minutos en llegar. Una vez que llegue, debes hacer click en el link para confirmar este reporte.
+    </p>
+    <% } else { %>
+    <h3>Gracias. Tu reporte será enviado en breve.</h3>
+
+    <p class="center"><input type="button" data-theme="a" id="open_report" value="Ver este reporte en el sitio"></p>
+    <% } %>
+
+
+    <div class="bottom-btn">
+        <input type="button" id="id_report_another" data-theme="a" value="Comenzar de nuevo" >
+    </div>
+</div>
