@@ -73,10 +73,18 @@ function fixmystreet_onload() {
         location_img = 'images/pin.svg';
         location_bg_img = 'images/pin_shadow.svg';
     }
-
+    var normal_external_graphics = "images/pin-${colour}.png";
+    var big_external_graphics = "images/pin-${colour}-big.png";
+    var pins_location_base = '';
+    if (CONFIG.COBRAND) {
+        pins_location_base = 'cobrands/' + CONFIG.COBRAND + '/';
+    }
+    normal_external_graphics = pins_location_base + normal_external_graphics;
+    big_external_graphics = pins_location_base + big_external_graphics;
+    
     pin_layer_style_map.addUniqueValueRules('default', 'size', {
         'normal': {
-            externalGraphic: "images/pin-${colour}.png",
+            externalGraphic: normal_external_graphics,
             graphicWidth: 48,
             graphicHeight: 64,
             graphicXOffset: -24,
@@ -88,7 +96,7 @@ function fixmystreet_onload() {
             backgroundYOffset: -30
         },
         'big': {
-            externalGraphic: "images/pin-${colour}-big.png",
+            externalGraphic: big_external_graphics,
             graphicWidth: 78,
             graphicHeight: 105,
             graphicXOffset: -39,
