@@ -52,8 +52,8 @@
         <div id="add_photo">
         <% } %>
             <label>Agrega una foto <em>(optional)</em></label>
-            <input data-icon="fms-photo-new" value="Take a new photo" type="button" name="photo_button" id="id_photo_button" data-role="button" data-theme="a">
-            <input data-icon="fms-photo-existing" value="Add an existing photo" type="button" name="existing" id="id_existing" data-role="button" data-theme="c">
+            <input data-icon="fms-photo-new" value="Toma una nueva" type="button" name="photo_button" id="id_photo_button" data-role="button" data-theme="a">
+            <input data-icon="fms-photo-existing" value="Agrega una foto existente" type="button" name="existing" id="id_existing" data-role="button" data-theme="c">
         </div>
 
         <% if ( file == '' ) { %>
@@ -61,11 +61,11 @@
         <% } else { %>
         <div id="display_photo">
         <% } %>
-            <label>Tu foto</label>
+            <label>Foto</label>
             <div class="photo">
             <img class="small" id="photo" src="<%= file %>" />
             </div>
-            <input value="Remove Photo" type="button" name="del_photo_button" id="id_del_photo_button" data-role="button" data-theme="a">
+            <input value="Eliminar foto" type="button" name="del_photo_button" id="id_del_photo_button" data-role="button" data-theme="a">
         </div>
     </div>
 </div>
