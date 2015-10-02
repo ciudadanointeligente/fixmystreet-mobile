@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="org.ciudadanointeligente.BarriosEnAccion" android-versionCode="42" version="2.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="org.ciudadano.BarriosEnAccion" android-versionCode="43" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>BarriosEnAccion</name>
     <description>
         Reporte problemas en BarriosEnAccion
