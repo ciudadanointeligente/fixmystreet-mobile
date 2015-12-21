@@ -32,7 +32,10 @@
 
     <!-- If you change the background colour of the app, change this value to match. -->
     <preference name="StatusBarBackgroundColor" value="#975CA8" />
-
+    <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>No compartiremos con nadie esta información</string>
+    </config-file>
+    
     <platform name="android">
         <icon src="res/android/ldpi.png" density="ldpi" />
         <icon src="res/android/mdpi.png" density="mdpi" />
